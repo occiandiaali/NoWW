@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
   },
 });
 
-class TrendingNews extends Component {
+class CryptoNews extends Component {
   state = {
     news: [],
   };
 
   componentDidMount() {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=ng&apiKey=${NEWS_API_KEY}`,
+      `https://newsapi.org/v2/everything?q=(crypto AND bitcoin)&sortBy=popularity&apiKey=${NEWS_API_KEY}`,
     )
       .then(res => res.json())
       .then(response => {
@@ -80,4 +80,4 @@ class TrendingNews extends Component {
   }
 }
 
-export default TrendingNews;
+export default CryptoNews;

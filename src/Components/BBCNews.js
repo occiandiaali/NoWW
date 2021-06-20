@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
   },
 });
 
-class TrendingNews extends Component {
+class BBCNews extends Component {
   state = {
     news: [],
   };
 
   componentDidMount() {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=ng&apiKey=${NEWS_API_KEY}`,
+      `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${NEWS_API_KEY}`,
     )
       .then(res => res.json())
       .then(response => {
@@ -80,4 +80,4 @@ class TrendingNews extends Component {
   }
 }
 
-export default TrendingNews;
+export default BBCNews;
