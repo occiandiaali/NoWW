@@ -11,12 +11,15 @@ class HomeScreen extends Component {
 
   render() {
     return (
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View>
+      <View>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          nestedScrollEnabled={true}>
           <TrendingNews navigation={this.props.navigation} />
+
           <Categories
             navigation={this.props.navigation}
-            style={{marginTop: 13}}
+            style={{marginTop: 9}}
           />
           <Text
             style={{
@@ -29,6 +32,7 @@ class HomeScreen extends Component {
             BBC News
           </Text>
           <BBCNews navigation={this.props.navigation} />
+
           <Text
             style={{
               fontSize: 18,
@@ -40,8 +44,8 @@ class HomeScreen extends Component {
             Popular Crypto
           </Text>
           <CryptoNews navigation={this.props.navigation} />
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
     );
   }
 }
