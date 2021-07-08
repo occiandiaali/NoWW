@@ -2,4 +2,6 @@
 
 ![App Screenshot](https://github.com/occiandiaali/NoWW/blob/main/noww-home.png?raw=true)  
 
-# Clone, then [npm install] to start  
+# Clone to start  
+```npm install
+```
