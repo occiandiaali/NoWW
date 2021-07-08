@@ -3,5 +3,5 @@
 ![App Screenshot](https://github.com/occiandiaali/NoWW/blob/main/noww-home.png?raw=true)  
 
 # Clone to start  
-```npm install
+```const test = () => null;  
 ```
