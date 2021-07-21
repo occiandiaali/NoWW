@@ -2,6 +2,7 @@
 
 ![App Screenshot](https://github.com/occiandiaali/NoWW/blob/main/noww-home.png?raw=true)  
 
-# Clone to start  
-```const test = () => null;  
+# Start  
+```<code>git clone {repo-link}</code>  
+<code>npm install</code>  
 ```
