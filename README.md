@@ -3,6 +3,8 @@
 ![App Screenshot](https://github.com/occiandiaali/NoWW/blob/main/noww-home.png?raw=true)  
 
 # Start  
-```<code>git clone {repo-link}</code>  
-<code>npm install</code>  
+```
+cd {your-work-directory}  
+git clone {repo-link}     
+npm install  
 ```
